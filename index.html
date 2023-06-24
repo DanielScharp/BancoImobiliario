@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Imobiliário</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="jogadores">
+            <div id="red" class="color-box"><span id="balance-1">$5000</span></div>
+            <div id="green" class="color-box"><span id="balance-2">$5000</span></div>
+            <div id="blue" class="color-box"><span id="balance-3">$5000</span></div>
+            <div id="white" class="color-box"><span id="balance-4">$5000</span></div>
+        </div>
+        <div class="selecionados">
+            <div id="player1" class="empty-box box"></div>
+            <div class="movimento">
+                <input type="number" id="amount" min="0" step="1000" required>
+
+                <button id="buy">-</button>    
+                <button id="sell">+</button>
+                <button id="trade">t</button>
+            </div>
+            <div id="player2" class="empty-box box disabled"></div>
+        </div>
+        
+    </div>
+    <div class="transaction-log">
+        <h2>Registro de Transações</h2>
+        <ul id="log-list"></ul>
+    </div>
+      
+    <script src="./script.js"></script>
+
+</body>
+</html>

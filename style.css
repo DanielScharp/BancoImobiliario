@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #272424;
+    gap: 20px;
+}
+
+.jogadores {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.color-box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selecionados {
+    width: 50%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#player1, #player2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #5e5d5d;
+}
+
+.movimento {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 50px;
+    height: 40px;
+    font-size: 26px;
+}
+
+input{
+    height: 40px;
+    font-size: 26px;
+}
+
+.selected {
+    border: 1px solid red !important;
+}
+.selected.player-box{
+    border: 1px solid #5e5d5d !important;
+} 
+
+.disabled {
+    display: none;
+}
+
+#red, .red {
+    background-color: red;
+}
+#blue, .blue {
+    background-color: blue;
+}
+#green, .green {
+    background-color: green;
+}
+#white, .white {
+    background-color: white;
+}
+
+
+
+.transaction-log{
+    background: #272424;
+    color: #fff;
+}
